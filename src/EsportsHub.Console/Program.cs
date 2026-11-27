@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using EsportsHub.Core.Models;
+using EsportsHub.Console.Menus;
 
 namespace EsportsHub.Console
 {
@@ -8,12 +9,9 @@ namespace EsportsHub.Console
     {
         static void Main(string[] args)
         {
-            Team team = new Team
-            {
-                Id = 1,
-                Name = "Team Liquid"
-            };
-            System.Console.WriteLine($"Hello, {team.Name}!");
+
+            MainMenu mainMenu = new MainMenu();
+            mainMenu.Display();
         }
     }
 }
